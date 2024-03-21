@@ -69,3 +69,25 @@ public class ChatServer extends JFrame
         textNuovo.setText("");
     }
   }
+
+  public void run(){
+    while(true){
+        try{
+            String mex=null;
+            while(new= input.readline()== null){}
+
+            gestoreChat.spedisciMessaggio(mex);
+        }catch(Exception e){
+            output.println("Errore nella spedizione del messaggio");
+        }
+    }
+  }
+
+  public void spedisciMessaggioChat(String Messaggio){
+    try{
+        output.println(messaggio);
+
+    }catch(Exception e){
+        output.println("Errore nella spedizione del messaggio")
+    }
+  }
