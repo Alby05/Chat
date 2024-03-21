@@ -42,3 +42,10 @@ public class ThreadChatConnessioni implements Runnable
     }
 
   public void spedisciMessaggiChat(String messaggio){ 
+    try{
+      output.println(messaggio);
+    }catch(Exception e){
+
+    }
+  }
+}
