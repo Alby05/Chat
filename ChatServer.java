@@ -55,3 +55,17 @@ public class ChatServer extends JFrame
 
     connetti();
   }
+
+  public void connetti()
+  {
+    gestioneServizio = new ThreadGestioneServizioChat(10,lista);
+  }
+
+  public void actionPerformer(ActionEvent e){
+    String bottone = e.getActionCommand();
+    if(bottone.equals("Invia"));
+    {
+        gestioneServizio.spedisciMessaggio(textNuovo.getText());
+        textNuovo.setText("");
+    }
+  }
